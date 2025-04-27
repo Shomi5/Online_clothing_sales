@@ -1,0 +1,52 @@
+﻿@model Pletko.Models.UserLogin
+
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/RagistracijaLogovanje.cshtml";
+}
+
+
+<div class="logovanjePozicija">
+    <div class="slikaRegister">
+        <img src="../images/logo.png" />
+    </div>
+    <div class="naslov">
+        <h1>Logovanje</h1>
+        <p></p>
+    </div>
+    <div class="pozicijaForme">
+        <form asp-action="Login" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="unutrasnjostForme">
+                <div>
+                    <label asp-for="Email" class="control-label">Vaš e-mail:</label>
+                    <input asp-for="Email" placeholder="Unesite vašu e-mail adresu" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Password" class="control-label">Vaša lozinka:</label>
+                    <input asp-for="Password" placeholder="Unesite vašu lozinku" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="potvrda">
+                    <div>
+                        <button type="submit">Uloguj se</button>
+                    </div>
+                    <div>
+                        <a class="vratiUnazad" asp-action="Index" asp-controller="User">Vrati na početnu</a>
+                    </div>
+                </div>
+                <p class="ptex">Da li još uvek nemate nalog? <a class="reg" href="@Url.Action("Register","User")">Registruj te se</a></p>
+
+            </div>
+
+
+
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

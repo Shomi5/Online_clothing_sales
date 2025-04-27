@@ -1,0 +1,291 @@
+﻿
+@{
+    ViewData["Title"] = "AdminPanel";
+    Layout = "~/Views/Shared/ModeratorPalenLayout.cshtml";
+}
+
+
+<div>
+    <div class="narucivanjeContent">
+        <div class="tabelaNaslov">
+            <div class="listaKorisnika">
+                <div class="naslovKorisnik">
+                    <h1>Lista korisnika</h1>
+                </div>
+                <table class="KorisnikTabela">
+                    <thead class="tableHaderKorisnik">
+                        <tr>
+                            <th>Ime</th>
+                            <th>Prezime</th>
+                            <th>Email</th>
+                            <th>Datum rođenja</th>
+                            <th>Broj telefona</th>
+                            <th>Naziv ponude</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="podaciTabeleKorisnik">
+                        @foreach (var item in ViewBag.Korisnici)
+                        {
+                            <tr>
+                                <td class="jezgroKorisnik">@item.Ime</td>
+                                <td class="jezgroKorisnik">@item.Prezime</td>
+                                <td class="jezgroKorisnik">@item.Email</td>
+                                <td class="jezgroKorisnik">@item.DatumRodjenja</td>
+                                <td class="jezgroKorisnik">@item.BrojTelefona</td>
+                                <td class="jezgroKorisnik">@item.Ponuda.Naziv</td>
+                                @if (item.Ponuda.Naziv != "Nema")
+                                {
+                                    <td class="jezgroKorisnik">
+                                        <a class="izbrisi" href="@Url.Action("OtkaziKorisnickuPonudu", "Moderator", new { KorisnikID = item.KorisnikId })">- Ponuda</a>
+                                    </td>
+                                }
+                                else{
+                                    <td>
+                                        <button class="izmeni" onclick="OnClickPonudaKorisnika(@item.KorisnikId)">+ Ponuda</button>
+                                    </td>
+                                }
+                                
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+
+
+                <div class="listaProizvoda">
+                    <div class="naslovKorisnik">
+                        <h1>Lista secijalnih ponuda</h1>
+                    </div>
+                    <table class="ProizvodTabela">
+                        <thead class="tableHaderKorisnik">
+                            <tr>
+                                <th>Naziv ponude</th>
+                                <th>Popust ponude</th>
+                                <th>Opis ponude</th>
+                                <th>Moderator</th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody class="podaciTabeleKorisnik">
+                            @if (ViewBag.Ponude != null && ViewBag.Ponude.Count > 0)
+                            {
+                                @foreach (var item in ViewBag.Ponude)
+                                {
+                                    <tr>
+                                        <td class="jezgroKorisnik">@item.Naziv</td>
+                                        <td class="jezgroKorisnik">@item.Popust<span> %</span></td>
+                                        <td class="jezgroKorisnik">@item.Opis</td>
+
+                                        <td class="jezgroKorisnik">@item.KorisnikId</td>
+                                        <td>
+                                            <button class="izmeni" onclick="OnClickEditPonudu(@item.PonudaId)">Izmeni</button>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+
+                                <tr>
+                                    <td>Trenutno nema specijalnih ponuda.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <div class="dodavanjeKP">
+                        <button onclick="OnClickDodajPonudu()">Dodaj specijalnu ponudu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aminPanel">
+            <div id="partialEdit">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@* Obavestenja *@
+
+@if (!string.IsNullOrEmpty(ViewBag.DodajPonudu))
+{
+    if (ViewBag.DodajPonudu == "Uspešno ste dodali ponudu.")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.DodajPonudu </h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.DodajPonudu == "Ponuda nije dodat!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.DodajPonudu</h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+}
+
+
+@if (!string.IsNullOrEmpty(ViewBag.UkloniPonudu))
+{
+    if (ViewBag.UkloniPonudu == "Uspesno ste uklonili ponudu korisnika!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.UkloniPonudu </h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.UkloniPonudu == "Došlo je do greške prilikom brisanja ponude korisnika!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.UkloniPonudu</h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.DodajPonuduKorisniku))
+{
+    if (ViewBag.DodajPonuduKorisniku == "Uspešno ste dodelili ponudu korisniku!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.DodajPonuduKorisniku </h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.DodajPonuduKorisniku == "Ponuda nije dodeljena!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.DodajPonuduKorisniku</h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.Ponuda))
+{
+    if (ViewBag.Ponuda == "Uspesno ste uklonili ponudu korisnika!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.Ponuda </h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.Ponuda == "Došlo je do greške prilikom brisanja ponude korisnika!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.Ponuda</h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.Ponuda))
+{
+    if (ViewBag.Ponuda == "Ponuda je uspešno obrisan!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.Ponuda </h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+   
+    if (ViewBag.Ponuda == "Došlo je do greške prilikom brisanja ponude!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.Ponuda</h3>
+            <a class="usmeravanje" href="@Url.Action("ModeratorPanel", "Moderator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+}
+
+
+<script type="text/javascript">
+
+    function OnClickPonudaKorisnika(korisnik) {
+
+        var idKorisnik = korisnik;
+        if(idKorisnik === "")
+        {
+            idKorisnik = 0;
+        }
+        $.ajax({
+            url: '@Url.Action("PonudaKorisnik", "Moderator")',
+            data: { KorisnikID: idKorisnik },
+          success:   function(result) {
+                $('#partialEdit').html(result);
+            }
+        });
+    }
+
+    function OnClickEditPonudu(ponuda) {
+
+        var idPonuda = ponuda;
+
+        if(idPonuda == null || idPonuda == 0)
+        {
+            idPonuda = 0;
+        }
+        console.log(idPonuda)
+        $.ajax({
+            url: '@Url.Action("EditPonuda", "Moderator")',
+            data: { PonudaID: idPonuda },
+          success:   function(result) {
+                $('#partialEdit').html(result);
+            }
+        });
+    }
+
+
+    function OnClickDodajPonudu() {
+
+        $.ajax({
+            url: '@Url.Action("DodajPonudu", "Moderator")',
+          success:   function(result) {
+                $('#partialEdit').html(result);
+            }
+        });
+    }
+</script>

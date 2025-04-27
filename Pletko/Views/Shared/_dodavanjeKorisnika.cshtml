@@ -1,0 +1,110 @@
+﻿@model Pletko.Models.AddUser
+
+@{
+    Layout = "~/Views/Shared/_prazan.cshtml";
+}
+
+<div class="dodavanjeKorisnika">
+    <div class="naslov">
+        <h1>Unos novog korisnika</h1>
+        <p></p>
+    </div>
+    <div class="pozicijaDodavanja">
+        <form asp-action="DodajKorisnika" asp-controller="Administrator" method="post" id="dodajKorisnika">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="unutrasnjostFormeDodavanje">
+                <div>
+                    <label asp-for="Ime" class="control-label">Vaše ime:</label>
+                    <input asp-for="Ime" placeholder="Unesite vaše ime" />
+                    <span asp-validation-for="Ime" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Prezime" class="control-label">Vaše prezime:</label>
+                    <input asp-for="Prezime" placeholder="Unesite vaše prezime" />
+                    <span asp-validation-for="Prezime" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Email" class="control-label">Vaš e-mail:</label>
+                    <input asp-for="Email" placeholder="Unesite vašu e-mail adresu" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Adresa" class="control-label">Vaša adresa:</label>
+                    <input asp-for="Adresa" placeholder="Unesite vaš adresu" />
+                    <span asp-validation-for="Adresa" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="DatumRodjenja" class="control-label">Vaš datum rođenja:</label>
+                    <input asp-for="DatumRodjenja" type="date" placeholder="Unesite vaš datum rođenja" />
+                    <span asp-validation-for="DatumRodjenja" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="OldPassword" class="control-label"></label>
+                    <input asp-for="OldPassword" class="form-control" placeholder="Unesite Vašu staru šifru" />
+                    <span asp-validation-for="OldPassword" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Password" class="control-label">Vaša lozinka:</label>
+                    <input asp-for="Password" placeholder="Unesite vašu lozinku" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="ConfirmPassword" class="control-label">Ponovite vašu lozinku:</label>
+                    <input asp-for="ConfirmPassword" placeholder="Unesite vašu lozinku" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="BrojTelefona" class="control-label">Vaš broj telefona:</label>
+                    <input asp-for="BrojTelefona" placeholder="Unesite vaš broj telefona" />
+                    <span asp-validation-for="BrojTelefona" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="StatusId" class="control-label">Odaberite status korisnika:</label>
+                    <select asp-for="StatusId"
+                            asp-items="@(new SelectList(ViewBag.Statusi,"StatusId","Naziv"))">
+                        <option value="0">Izaberite status</option>
+                    </select>
+                    <span asp-validation-for="StatusId" class="text-danger"></span>
+                </div>
+                <div>
+                    <button class="dodajKorisnika" type="submit">Dodaj korisnika</button>
+                </div>
+                <div>
+                    <a asp-action="AdminPanel" asp-controller="Administrator" class="vratiUnazad">Odustani</a>
+                </div>
+
+            </div>
+
+
+
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#dodajKorisnika").submit(function (e) {
+            e.preventDefault(); // Sprečava osvežavanje stranice
+
+            var formData = $(this).serialize(); // Prikuplja podatke iz forme
+
+            $.ajax({
+                url: "/Administrator/DodajKorisnika",
+                type: "POST",
+                data: formData,
+                success: function (data) {
+                    if (!data.success) {
+                        $("#partialEdit").html(data); // Ažurira parcijalni pogled sa greškama
+                    }
+                    else{
+                        location.reload();
+                    }
+                },
+                error: function (xhr) {
+                    console.error("Greška:", xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+

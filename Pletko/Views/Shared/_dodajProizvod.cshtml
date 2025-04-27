@@ -1,0 +1,92 @@
+﻿@model Pletko.Models.DodajProizvod
+
+@{
+    Layout = "~/Views/Shared/_prazan.cshtml";
+}
+
+<div class="dodavanjeKorisnika">
+    <div class="naslov">
+        <h1>Dodavanje proizvoda</h1>
+        <p></p>
+    </div>
+    <div class="pozicijaDodavanja">
+        <div class="unutrasnjostFormeEditovanje">
+            <form asp-action="DodajNoviProizvod" asp-controller="Administrator" enctype="multipart/form-data" method="POST" id="dodajProizvodForma">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="dodajSliku">
+                    <label asp-for="SlikaArtikla" class="control-label">Izaberite sliku proizvoda:</label>
+                    <input asp-for="SlikaArtikla" class="form-control" />
+                    <span asp-validation-for="SlikaArtikla" class="text-danger"></span>
+                </div>
+                <div class="formaEdituj">
+                    <label asp-for="Naziv" class="control-label">Naziv proizvoda:</label>
+                    <input asp-for="Naziv" class="form-control" placeholder="Unesite naziv proizvoda"/>
+                    <span asp-validation-for="Naziv" class="text-danger"></span>
+
+
+                    <label asp-for="Cena" class="control-label">Cena proizvoda:</label>
+                    <input asp-for="Cena" class="form-control" placeholder="Unesite cenu proizvoda" value="0.0" />
+                    <span asp-validation-for="Cena" class="text-danger"></span>
+
+                    <label asp-for="Kolicina" class="control-label">Količina proizvoda:</label>
+                    <input asp-for="Kolicina" class="form-control" placeholder="Unesite količinu proizvoda" value="1" min="1" max="20" />
+                    <span asp-validation-for="Kolicina" class="text-danger"></span>
+
+                    <label asp-for="Opis" class="control-label">Opis proizvoda:</label>
+                    <input asp-for="Opis" class="form-control" placeholder="Unesite opis proizvoda" />
+                    <span asp-validation-for="Opis" class="text-danger"></span>
+
+                    <label asp-for="KategorijaId" class="control-label">Kategorija proizvoda:</label>
+                    <select asp-for="KategorijaId"
+                            asp-items="@(new SelectList(ViewBag.Kategorije,"KategorijaId","Naziv"))">
+                        <option value="0">Izaberite kategoriju</option>
+                    </select>
+                    <span asp-validation-for="KategorijaId" class="text-danger"></span>
+
+                    <label asp-for="KorisnikId" class="control-label">ID administratora:</label>
+                     <input asp-for="KorisnikId" class="form-control" value="@ViewBag.Admin" readonly /> 
+                    <span asp-validation-for="KorisnikId" class="text-danger"></span>
+
+                    <label asp-for="OldPassword" class="control-label">Administratrska lozinka:</label>
+                    <input asp-for="OldPassword" class="form-control" placeholder="Unesite vašu lozinku." />
+                    <span asp-validation-for="OldPassword" class="text-danger"></span>
+
+                    <div class="naruciDugmici">
+                        <button type="submit">Dodaj proizvod</button>
+                        <a href="@Url.Action("AdminPanel", "Administrator")" class="odustani">Odustani</a> 
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#dodajProizvodForma").submit(function (e) {
+            e.preventDefault(); // Sprečava osvežavanje stranice
+
+            var formData = new FormData(this); // Prikuplja podatke iz forme
+
+            $.ajax({
+                url: "/Administrator/DodajNoviProizvod",
+                type: "POST",
+                data: formData,
+                contentType: false,  // Mora biti false jer koristimo FormData
+                processData: false,
+                success: function (data) {
+                    if (!data.success) {
+                        $("#partialEdit").html(data); // Ažurira parcijalni pogled sa greškama
+                    }
+                    else{
+                        location.reload();
+                    }
+                },
+                error: function (xhr) {
+                    console.error("Greška:", xhr.responseText);
+                }
+            });
+        });
+    });
+</script>

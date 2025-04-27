@@ -1,0 +1,109 @@
+﻿@model Pletko.Models.ProizovdEdit
+
+@{
+    Layout = "~/Views/Shared/_prazan.cshtml";
+}
+
+<div class="dodavanjeKorisnika">
+    <div class="naslov">
+        <h1>Promenite podatke proizvoda</h1>
+        <p></p>
+    </div>
+    <div class="pozicijaDodavanja">
+        <div class="unutrasnjostFormeEditovanje">
+            <form asp-action="AzurirajPodatkeProizvoda" asp-controller="Administrator" method="POST" id="editPodatakaProizvodaForm"> 
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="okvirslike">
+                    <div class="slikaFormat">
+                        <img src="~/images/proizvodImages/@(ViewBag.TrazeniProizvod.Naziv.ToString() + ".jpg")"
+                             class="rounded d-block w-200" alt="...">
+                    </div>
+                </div>
+                <div class="dodajSliku">
+                    <label asp-for="SlikaArtikla" class="control-label">Izaberite novu sliku proizvoda:</label>
+                    <input asp-for="SlikaArtikla" class="form-control" />
+                    <span asp-validation-for="SlikaArtikla" class="text-danger"></span>
+                </div>
+                 <div class="formaEdituj"> 
+                     <input type="hidden" name="ProizvodId" class="form-control" value="@ViewBag.TrazeniProizvod.ProizvodId" /> 
+                   <span asp-validation-for="ProizvodId" class="text-danger"></span> 
+
+
+                    <label asp-for="Naziv" class="control-label">Naziv proizvoda:</label> 
+                    <input asp-for="Naziv" class="form-control" value="@ViewBag.TrazeniProizvod.Naziv" /> 
+                    <span asp-validation-for="Naziv" class="text-danger"></span> 
+
+
+                    <label asp-for="Cena" class="control-label">Cena proizvoda:</label> 
+                     <input asp-for="Cena" class="form-control" value="@ViewBag.TrazeniProizvod.Cena" /> 
+                     <span asp-validation-for="Cena" class="text-danger"></span> 
+
+                     <label asp-for="Kolicina" class="control-label">Količina proizvoda:</label> 
+                     <input asp-for="Kolicina" class="form-control" value="@ViewBag.TrazeniProizvod.Kolicina" min="0" max="20" /> 
+                     <span asp-validation-for="Kolicina" class="text-danger"></span> 
+
+                     <label asp-for="Opis" class="control-label">Opis proizvoda:</label> 
+                    <input asp-for="Opis" class="form-control" value="@ViewBag.TrazeniProizvod.Opis" /> 
+                     <span asp-validation-for="Opis" class="text-danger"></span>
+
+                    <label asp-for="KategorijaId" class="control-label">Kategorija proizvoda:</label>
+                    <select asp-for="KategorijaId" 
+                             asp-items="@(new SelectList(ViewBag.SveKategorije,"KategorijaId","Naziv"))"> 
+                        <option value="0">Izaberite kategoriju</option>
+                    </select> 
+                     <span asp-validation-for="KategorijaId" class="text-danger"></span> 
+
+                     <label asp-for="KorisnikId" class="control-label">ID Administratora:</label> 
+                     <input asp-for="KorisnikId" class="form-control" value="@ViewBag.TrazeniProizvod.KorisnikId" readonly /> 
+                     <span asp-validation-for="KorisnikId" class="text-danger"></span> 
+
+                     <label asp-for="OldPassword" class="control-label">Administratorska lozinka:</label> 
+                     <input asp-for="OldPassword" class="form-control" placeholder="Unesite vašu lozinku." /> 
+                     <span asp-validation-for="OldPassword" class="text-danger"></span> 
+
+                     <div class="naruciDugmici"> 
+                        <button type="submit">Ažurirajte podatke</button>
+                        <a href="@Url.Action("ObrisiProizvod", "Administrator", new { ProizovdID = @ViewBag.TrazeniProizvod.ProizvodId })" class="odustani">Obriši proiyvod</a>
+                    </div> 
+                </div> 
+            </form> 
+        </div>
+    </div>
+</div>
+
+<script> 
+     $(document).ready(function () { 
+         $("#editPodatakaProizvodaForm").submit(function (e) { 
+             e.preventDefault(); // Sprečava osvežavanje stranice
+
+            var formData = new FormData(this); // Prikuplja podatke iz forme
+
+             $.ajax({ 
+                 url: "/Administrator/AzurirajPodatkeProizvoda", 
+               type: "POST", 
+                 data: formData,
+                 contentType: false,  // Mora biti false jer koristimo FormData
+                 processData: false,
+                 success: function (data) { 
+                     if (data.success) { 
+                         alert(data.message); 
+                         $.ajax({
+                       url: '/Administrator/EditProizvoda',
+                        type: 'GET',
+                    data: { ProizvodId: data.proizvodId },
+                       success: function (partialView) { 
+                         $('#partialEdit').html(partialView); 
+                         }, 
+                     }); 
+                     } else { 
+                         $("#partialEdit").html(data); // Ažurira parcijalni pogled sa greškama 
+                     } 
+                 }, 
+                 error: function (xhr) { 
+                     console.error("Greška:", xhr.responseText); 
+                 } 
+             }); 
+         }); 
+     }); 
+ </script>
+

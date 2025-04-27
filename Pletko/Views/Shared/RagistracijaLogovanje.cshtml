@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/RegistracijaLogovanje.css" />
+    <link rel="stylesheet" href="~/css/ProfiliStyle.css" />
+
+</head>
+<body>
+
+    <main class="header finisher-header blue-header sticky-header" style="width: 100%; height: 100vh;">
+        @RenderBody()
+    </main>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/finisher-header.es5.min.js"></script>
+    <script src="~/js/pozadinaLogaRegister.js"></script>
+    <script src="~/js/cenaProizvoda.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

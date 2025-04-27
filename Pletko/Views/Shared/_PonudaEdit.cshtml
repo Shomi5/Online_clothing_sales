@@ -1,0 +1,93 @@
+﻿@model Pletko.Models.SpecijalnaPonudaBO
+
+@{
+    Layout = "~/Views/Shared/_prazan.cshtml";
+}
+
+<div class="dodavanjeKorisnika">
+    <div class="naslov">
+        <h1>Editovanje specijanle pogodnosti</h1>
+        <p></p>
+    </div>
+    <div class="pozicijaDodavanja">
+        <form asp-action="EditPonude" asp-controller="Administrator" method="post" id="editujPonudu">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="unutrasnjostFormeDodavanje">
+                <input type="hidden" name="PonudaId" id="PonudaId" value="@ViewBag.trazenaPonuda.PonudaId" />
+                <div>
+                    <label asp-for="Naziv" class="control-label">Naziv ponude:</label>
+                    <input asp-for="Naziv" placeholder="Unesite naziv ponude." value="@ViewBag.trazenaPonuda.Naziv" />
+                    <span asp-validation-for="Naziv" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Popust" class="control-label">Popust ponude:</label>
+                    <input asp-for="Popust" placeholder="Unesite popust od 5 do 80 %" value="@ViewBag.trazenaPonuda.Popust" />
+                    <span asp-validation-for="Popust" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Opis" class="control-label">Opis ponude:</label>
+                    <input asp-for="Opis" placeholder="Unesite opis ponude" value="@ViewBag.trazenaPonuda.Opis" />
+                    <span asp-validation-for="Opis" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="KorisnikId" class="control-label">ID radnika:</label>
+                    <input asp-for="KorisnikId" placeholder="Unesite radnik ID" value="@ViewBag.Radnik" readonly />
+                    <span asp-validation-for="KorisnikId" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="OldPassword" class="control-label">lozinka radnika:</label>
+                    <input asp-for="OldPassword" placeholder="Unesite lozinku radnika" />
+                    <span asp-validation-for="OldPassword" class="text-danger"></span>
+                </div>
+                <div>
+                </div>
+                <div>
+                    <button class="dodajKorisnika" type="submit">Izmeni ponudu</button>
+                </div>
+                <div>
+                    <a href="@Url.Action("ObrisiPonudu", "Moderator", new { PonudaID = @ViewBag.trazenaPonuda.PonudaId })" class="vratiUnazad">Odustani</a>
+                </div>
+
+            </div>
+
+
+
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#editujPonudu").submit(function (e) {
+            e.preventDefault(); // Sprečava osvežavanje stranice
+
+            var formData = $(this).serialize(); // Prikuplja podatke iz forme
+
+            $.ajax({
+                url: "/Moderator/EditPonude",
+                type: "POST",
+                data: formData,
+                success: function (data) {
+                    if (data.success) {
+                        alert(data.message);
+                        $.ajax({
+                        url: '/Moderator/EditProizvoda',
+                        type: 'GET',
+                        data: { PonudaID: data.ponudaId },
+                        success: function (partialView) {
+                        $('#partialEdit').html(partialView);
+                        },
+                    });
+                    } else {
+                        $("#partialEdit").html(data); // Ažurira parcijalni pogled sa greškama
+                    }
+                },
+                error: function (xhr) {
+                    console.error("Greška:", xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+
+

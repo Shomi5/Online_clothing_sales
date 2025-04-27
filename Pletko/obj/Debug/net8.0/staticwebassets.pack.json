@@ -1,0 +1,505 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Pletko.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Pletko.18v6ubfzti.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\AdminPanel.css",
+      "PackagePath": "staticwebassets\\css\\AdminPanel.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\AdminPanelReg.css",
+      "PackagePath": "staticwebassets\\css\\AdminPanelReg.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\GlavnaStrana.css",
+      "PackagePath": "staticwebassets\\css\\GlavnaStrana.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\NavBar.css",
+      "PackagePath": "staticwebassets\\css\\NavBar.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\ProfiliStyle.css",
+      "PackagePath": "staticwebassets\\css\\ProfiliStyle.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\RegistracijaLogovanje.css",
+      "PackagePath": "staticwebassets\\css\\RegistracijaLogovanje.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\banner_Džemper.jpg",
+      "PackagePath": "staticwebassets\\images\\banner_Džemper.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\banner_Kape.jpg",
+      "PackagePath": "staticwebassets\\images\\banner_Kape.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\banner_Rukavice.jpg",
+      "PackagePath": "staticwebassets\\images\\banner_Rukavice.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\banner_Salovi.jpg",
+      "PackagePath": "staticwebassets\\images\\banner_Salovi.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\banner_Čarape.jpg",
+      "PackagePath": "staticwebassets\\images\\banner_Čarape.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\kapatest.jpg",
+      "PackagePath": "staticwebassets\\images\\kapatest.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\logoBezSlova.png",
+      "PackagePath": "staticwebassets\\images\\logoBezSlova.png"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Braon vunene rukavice.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Braon vunene rukavice.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Crne vunene rukavice.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Crne vunene rukavice.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Ljubičasta vunena kapa sa punđom.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Ljubičasta vunena kapa sa punđom.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Narandžasta vunena kapa.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Narandžasta vunena kapa.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Pletena kapa.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Pletena kapa.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Sive vunene čarape.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Sive vunene čarape.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Vuneni dzemper plavi.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Vuneni dzemper plavi.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Vuneni dzemper plavo sivi.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Vuneni dzemper plavo sivi.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Vuneni dzemper.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Vuneni dzemper.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\Vuneni sal.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\Vuneni sal.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\_9e4ea28a-c5fa-4b79-920f-9a3f1f3d8bc9.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\_9e4ea28a-c5fa-4b79-920f-9a3f1f3d8bc9.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\viber_image_2025-04-03_13-56-47-924.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\viber_image_2025-04-03_13-56-47-924.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-012.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-012.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-194.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-194.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-561.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-561.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-632.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-632.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-701.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-701.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-806.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-806.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-832.jpg",
+      "PackagePath": "staticwebassets\\images\\proizvodImages\\viber_image_2025-04-03_13-56-48-832.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\images\\registerPozadina.jpg",
+      "PackagePath": "staticwebassets\\images\\registerPozadina.jpg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\PocetniNavSkripta.js",
+      "PackagePath": "staticwebassets\\js\\PocetniNavSkripta.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\PozadinaNava.js",
+      "PackagePath": "staticwebassets\\js\\PozadinaNava.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\PretragaNavSkripta.js",
+      "PackagePath": "staticwebassets\\js\\PretragaNavSkripta.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\cenaProizvoda.js",
+      "PackagePath": "staticwebassets\\js\\cenaProizvoda.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\finisher-header.es5.min.js",
+      "PackagePath": "staticwebassets\\js\\finisher-header.es5.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\popupNarucivanje.js",
+      "PackagePath": "staticwebassets\\js\\popupNarucivanje.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\pozadinaLogaRegister.js",
+      "PackagePath": "staticwebassets\\js\\pozadinaLogaRegister.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\js\\skrolovanjeDiva.js",
+      "PackagePath": "staticwebassets\\js\\skrolovanjeDiva.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\Džemperi.svg",
+      "PackagePath": "staticwebassets\\svg\\Džemperi.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\Kape.svg",
+      "PackagePath": "staticwebassets\\svg\\Kape.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\Rukavice.svg",
+      "PackagePath": "staticwebassets\\svg\\Rukavice.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\Salovi.svg",
+      "PackagePath": "staticwebassets\\svg\\Salovi.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\dostava.svg",
+      "PackagePath": "staticwebassets\\svg\\dostava.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\dropdown.svg",
+      "PackagePath": "staticwebassets\\svg\\dropdown.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\kuca.svg",
+      "PackagePath": "staticwebassets\\svg\\kuca.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\logout.svg",
+      "PackagePath": "staticwebassets\\svg\\logout.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\procena.svg",
+      "PackagePath": "staticwebassets\\svg\\procena.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\profilSvg.svg",
+      "PackagePath": "staticwebassets\\svg\\profilSvg.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\sigurnost.svg",
+      "PackagePath": "staticwebassets\\svg\\sigurnost.svg"
+    },
+    {
+      "Id": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\wwwroot\\svg\\Čarape.svg",
+      "PackagePath": "staticwebassets\\svg\\Čarape.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pletko.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Pletko.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Pletko.props",
+      "PackagePath": "build\\Pletko.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Pletko.props",
+      "PackagePath": "buildMultiTargeting\\Pletko.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Pletko.props",
+      "PackagePath": "buildTransitive\\Pletko.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

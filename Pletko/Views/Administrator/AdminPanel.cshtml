@@ -1,0 +1,353 @@
+﻿
+@{
+    ViewData["Title"] = "AdminPanel";
+    Layout = "~/Views/Shared/AdminPanel.cshtml";
+}
+
+<div>
+    <div class="narucivanjeContent">
+        <div class="tabelaNaslov">
+            <div class="listaNarudzbina">
+                <div class="naslovKorisnik">
+                    <h1>Lista narudžbina</h1>
+                </div>
+                <table class="NarudzbineTabela">
+                    <thead class="tableHaderNarudzbine">
+                        <tr>
+                            <th>Proizvod</th>
+                            <th>Količina</th>
+                            <th>Ime</th>
+                            <th>Prezime</th>
+                            <th>Adresa</th>
+                            <th>Ukupna cena</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="podaciTabeleNarudzbine">
+                        @foreach (var item in ViewBag.Narudzbine)
+                        {
+                            <tr>
+                                <td class="jezgroNarudzbine">@item.Proizvod.Naziv</td>
+                                <td class="jezgroNarudzbine">@item.Kolicina</td>
+                                <td class="jezgroNarudzbine">@item.Korisnik.Ime</td>
+                                <td class="jezgroNarudzbine">@item.Korisnik.Prezime</td>
+                                <td class="jezgroNarudzbine">@item.Korisnik.Adresa</td>
+                                <td class="jezgroNarudzbine">@item.UkupnaCena<span> Rsd</span></td>
+                                <td class="jezgroNarudzbine"><a class="izbrisi" href="@Url.Action("OtkaziKorisnickuNarudzbu", "Administrator", new { NarudzbinaID = item.NarudzbinaId })">Otkaži</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="listaKorisnika">
+                <div class="naslovKorisnik">
+                    <h1>Lista korisnika</h1>
+                </div>
+                <table class="KorisnikTabela">
+                    <thead class="tableHaderKorisnik">
+                        <tr>
+                            <th>Ime</th>
+                            <th>Prezime</th>
+                            <th>Email</th>
+                            <th>Datum rođenja</th>
+                            <th>Broj telefona</th>
+                            <th>Lozinka</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="podaciTabeleKorisnik">
+                        @foreach (var item in ViewBag.Korisnici)
+                        {
+                            <tr>
+                                <td class="jezgroKorisnik">@item.Ime</td>
+                                <td class="jezgroKorisnik">@item.Prezime</td>
+                                <td class="jezgroKorisnik">@item.Email</td>
+                                <td class="jezgroKorisnik">@item.DatumRodjenja</td>
+                                <td class="jezgroKorisnik">@item.BrojTelefona</td>
+                                <td class="jezgroKorisnik">@item.Password</td>
+                                <td class="jezgroKorisnik">@item.Status.Naziv</td>
+                                <td >
+                                    <button class="izmeni" onclick="OnClickEdit(@item.KorisnikId)">Izmeni</button>
+                                </td>
+                            </tr>
+                        }
+   
+                    </tbody>
+                </table>
+                <div class="dodavanjeKP">
+                    <button onclick="OnClickDodaj()">DodajKorisnika</button>
+                </div>
+            </div>
+
+
+            <div class="listaProizvoda">
+                <div class="naslovKorisnik">
+                    <h1>Lista Proizvoda</h1>
+                </div>
+                <table class="ProizvodTabela">
+                    <thead class="tableHaderKorisnik">
+                        <tr>
+                            <th>Naziv Pr.</th>
+                            <th>Kolicina Pr.</th>
+                            <th>Kategorija Pr.</th>
+                            <th>Cena Pr.</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="podaciTabeleKorisnik">
+                        @foreach (var item in ViewBag.Proizvodi)
+                        {
+                            <tr>
+                                <td class="jezgroKorisnik">@item.Naziv</td>
+                                <td class="jezgroKorisnik">@item.Kolicina</td>
+                                <td class="jezgroKorisnik">@item.Kategorija.Naziv</td>
+
+                                <td class="jezgroKorisnik">@item.Cena<span> Rsd</span></td>
+                                <td>
+                                    <button class="izmeni" onclick="OnClickEditProizvod(@item.ProizvodId)">Izmeni</button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="dodavanjeKP">
+                    <button onclick="OnClickDodajProizvod()">Dodaj proizvod</button>
+                </div>
+            </div>
+            
+
+
+            
+        </div>
+        <div class="aminPanel">
+            <div  id="partialEdit">
+                
+            </div>
+        </div>
+        @* class="podaciEdit" *@
+        
+
+    </div>
+</div>
+
+@* Odgovori na foreme *@
+
+
+@if (!string.IsNullOrEmpty(ViewBag.OtkazanaNarudzbina))
+{
+    if (ViewBag.OtkazanaNarudzbina == "Narudžbina je uspešno otkazana!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.OtkazanaNarudzbina </h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.OtkazanaNarudzbina == "Narudzbenica nije pronadjena!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.OtkazanaNarudzbina</h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.OtkazanaNarudzbina == "Niste odabrali narudžbinu!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.OtkazanaNarudzbina</h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+}
+
+
+@if (!string.IsNullOrEmpty(ViewBag.DodatKorisnik))
+{
+    if (ViewBag.DodatKorisnik == "Uspešno ste dodali korisnika.")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.DodatKorisnik </h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.DodatKorisnik == "Došlo je do greške prilikom dodavanja.")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.DodatKorisnik</h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.DodatKorisnik == "Korisnik nije dodat!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.OtkazanaNarudzbina</h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+}
+
+
+@if (!string.IsNullOrEmpty(ViewBag.ObrisanKorisnik))
+{
+    if (ViewBag.ObrisanKorisnik == "Korisnik je uspešno obrisan!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.ObrisanKorisnik </h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.ObrisanKorisnik == "Nije moguće obrisati korisnika koji ima narudžbinu!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.ObrisanKorisnik</h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.Proizvod))
+{
+    if (ViewBag.Proizvod == "Proizvod je uspešno obrisan!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.Proizvod </h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.Proizvod == "Nije moguce izbrisati rezervisan proizvod!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.Proizvod</h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.DodajProizvod))
+{
+    if (ViewBag.DodajProizvod == "Uspešno ste dodali Proizvod.")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.DodajProizvod </h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Ostanite na panelu</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+    if (ViewBag.DodajProizvod == "Proizovd nije dodat!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.DodajProizvod</h3>
+            <a class="usmeravanje" href="@Url.Action("AdminPanel", "Administrator")">Pokušajte ponovo</a>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Vratite se na glavnu stranu</a>
+
+        </div>
+    }
+
+}
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<script type="text/javascript">
+
+    function OnClickEdit(korisnik) {
+
+        var idKorisnik = korisnik;
+        if(idKorisnik === "")
+        {
+            idKorisnik = 0;
+        }
+        $.ajax({
+            url: '@Url.Action("EditPodatakaPartial", "Administrator")',
+            data: { KorisnikID: idKorisnik },
+          success:   function(result) {
+                $('#partialEdit').html(result);
+            }
+        });
+    }
+
+    function OnClickDodaj() {
+
+        $.ajax({
+            url: '@Url.Action("DodajKorisnika", "Administrator")',
+          success:   function(result) {
+                $('#partialEdit').html(result);
+            }
+        });
+    }
+    
+    function OnClickEditProizvod(proizvod) {
+
+        var idProizvod = proizvod;
+        
+        if(idProizvod == null || idProizvod == 0)
+        {
+            idProizvod = 0;
+        }
+        console.log(idProizvod)
+        $.ajax({
+            url: '@Url.Action("EditProizvoda", "Administrator")',
+            data: { ProizvodID: idProizvod },
+          success:   function(result) {
+                $('#partialEdit').html(result);
+            }
+        });
+    }
+
+
+        function OnClickDodajProizvod() {
+
+        $.ajax({
+            url: '@Url.Action("DodajProizvod", "Administrator")',
+          success:   function(result) {
+                $('#partialEdit').html(result);
+            }
+        });
+    }
+</script>

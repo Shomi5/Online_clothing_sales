@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/AdminPanel.css" />
+    <link rel="stylesheet" href="~/css/ProfiliStyle.css" />
+    <link rel="stylesheet" href="~/css/NavBar.css" />
+
+</head>
+<body>
+    <header id="pocetakNava">
+        <nav class="navbar mojibar skrolaj navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto logoPocetna" href="/"><img src="~/images/logoBezSlova.png" alt=""></a>
+
+
+                @if (ViewBag.Logovan)
+                {
+                    @if (ViewBag.Logovan)
+                    {
+
+                        @if (ViewBag.Rola == "Admin" || ViewBag.Rola == "Moderator")
+                        {
+                            <div class="btn-group">
+                                <a type="submit" class="kuca" data-bs-toggle="dropdown">
+                                    <img src="~/svg/profilSvg.svg" />
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="@Url.Action("userProfil", "User")"><span>Vaš profil</span></a>
+                                    @if (ViewBag.Rola == "Admin")
+                                    {
+                                        <a class="dropdown-item" href="@Url.Action("AdminPanel", "Administrator")"><span>Admin panel</span></a>
+                                    }
+                                    else
+                                    {
+                                        <a class="dropdown-item" href="@Url.Action("ModeratorPanel", "Moderator")"><span>Moderator panel</span></a>
+                                    }
+
+                                    <a class="dropdown-item profilDrop" href="@Url.Action("Logout", "User")"><span>Logout</span></a>
+                                </ul>
+                            </div>
+                        }
+
+                        else
+                        {
+                            <div class="btn-group">
+                                <a type="submit" class="kuca" data-bs-toggle="dropdown">
+                                    <img src="~/svg/profilSvg.svg" />
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <a class="dropdown-item" href="@Url.Action("userProfil", "User")"><span>Vaš profil</span></a>
+                                    <a class="dropdown-item profilDrop" href="@Url.Action("Logout", "User")"><span>Logout</span></a>
+                                </ul>
+                            </div>
+                        }
+
+                    }
+                    else
+                    {
+
+                        <a class="login-buttin svgLogoin" href="@Url.Action("Login", "User")"><img src="~/svg/logout.svg" /><span>Ulogujte se</span></a>
+                    }
+
+                }
+                else
+                {
+
+                    <a class="login-buttin svgLogoin" href="@Url.Action("Login", "User")"><img src="~/svg/logout.svg" /><span>Ulogujte se</span></a>
+                }
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/finisher-header.es5.min.js"></script>
+    <script src="~/js/pozadinaLogaRegister.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿@model Pletko.Models.KorisnikNarucivanje
+
+@{
+    ViewData["Title"] = "Narudzbina";
+    Layout = "~/Views/Shared/RagistracijaLogovanje.cshtml";
+}
+
+
+<div class="pozicijaUspeh">
+    <div class="narucivanjeContent">
+        <div class="slikaLogo ">
+            <div class="Kupovina">
+                <div class="naslovNaruci">
+                    <h1>Unesite Vaše podatke</h1>
+                </div>
+                <form asp-action="Narudzbinad" method="POST" class="frmNar">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="formaNarucivanje">
+                        <label asp-for="BrojKartice"></label>
+                        <input asp-for="BrojKartice" name="BrojKartice" placeholder="xxxx xxxx xxxx xxxx" />
+                        <span asp-validation-for="BrojKartice" class="text-danger"></span>
+
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" value="@ViewBag.Korisnik.Email" readonly />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+
+                        <input type="hidden" name="ProizvodId" value="@ViewBag.TrazeniProizvod.ProizvodId">
+
+                        <label asp-for="Kolicina"></label>
+                        <input asp-for="Kolicina" id="kolicina" min="1" max="@ViewBag.TrazeniProizvod.Kolicina" />
+                        <span asp-validation-for="Kolicina" class="text-danger"></span>
+                        <input for="Popust" type="hidden" value="@ViewBag.Korisnik.Ponuda.PonudaId" name="Popust" />
+                        <div class="naruciDugmici">
+                            <button type="submit">Naruči proizvod</button>
+                            <a asp-action="Index" asp-controller="User" class="odustani">Vrati se nazad</a>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="opisNarudzbe">
+           
+                <div class="slikaNarudzbina">
+                <img src="~/images/proizvodImages/@(ViewBag.TrazeniProizvod.Naziv.ToString() + ".jpg")" alt="Alternate Text" />
+			    </div> 
+            <div class="pozadina">
+                <div class="pozicijaCena">
+                    <div class="cenaKolicina">
+                        <p>Količina proizvoda: <span id="prikazKolicine">1</span> kom</p>
+                        @if(ViewBag.Korisnik.Ponuda.PonudaId > 0){
+                            <p>Cena proizvoda: <span>@string.Format("{0:F2}", ViewBag.TrazeniProizvod.Cena / (ViewBag.Korisnik.Ponuda.Popust / 100 + 1))</span> RSD</p>
+                        }
+                        else{
+                            <p>Cena proizvoda: <span>@ViewBag.TrazeniProizvod.Cena</span> RSD</p>
+                        }
+                        
+                    </div>
+                    <div class="ukupnaCena">
+                        @if (ViewBag.Korisnik.Ponuda.PonudaId > 0)
+                        {
+                            <h3>Ukupna cena: <span id="ukupnaCena" data-cena="@string.Format("{0:F2}", ViewBag.TrazeniProizvod.Cena / (ViewBag.Korisnik.Ponuda.Popust / 100 + 1))">@string.Format("{0:F2}", ViewBag.TrazeniProizvod.Cena / (ViewBag.Korisnik.Ponuda.Popust / 100 + 1))</span> RSD </h3>
+                        }
+                        else{
+                            <h3>Ukupna cena: <span id="ukupnaCena" data-cena="@ViewBag.TrazeniProizvod.Cena">@ViewBag.TrazeniProizvod.Cena</span> RSD </h3>
+                        }
+                    </div>
+                </div>
+                <div class="opisText">
+                    <p><span>@ViewBag.TrazeniProizvod.Opis</span></p>
+                </div>
+                @if (ViewBag.Korisnik.Ponuda.PonudaId > 0)
+                {
+                    <div class="opisText">
+                        <p><span>@("Imate popust od: " + ViewBag.Korisnik.Ponuda.Popust + "%")</span></p>
+                    </div>
+                    
+                }
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+
+
+@if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+{
+    <div class="uspesnaNaruduba">
+
+        <h3>@ViewBag.SuccessMessage </h3>
+        <a class="usmeravanje" href="@Url.Action("index", "User")">Nastavi te sa naručivanjem</a>
+        <a class="usmeravanje" href="@Url.Action("UserProfil", "User")">Pogledaj te narudžbe na profilu</a>
+
+    </div>
+}
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

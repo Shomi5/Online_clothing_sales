@@ -1,0 +1,491 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+/* Registracija */
+
+/* Naslov */
+
+.slikaRegister{
+    position:absolute;
+    top:7px;
+    max-height:100vh;
+}
+
+.slikaRegister img {
+    max-height: 100vh;
+}
+
+
+
+/* Pozicijoniranje Forme */
+.registracijaPozicija {
+    width: 100%;
+    margin-top:50px;
+    display: flex;
+    max-height:auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+.registracijaPozicija .pozicijaForme {
+    width: 700px;
+    min-height: 500px; 
+    display: grid;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 8px black;
+    margin-bottom: 100px;
+    padding: 20px; 
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(2px); 
+    -webkit-backdrop-filter: blur(5px); 
+}
+
+.unutrasnjostForme {
+
+    width: 600px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+.registracijaPozicija .pozicijaForme label {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 1px;
+    color: white;
+    text-shadow: 0.1px 2px 5px black;
+}
+
+.pozicijaForme .vratiUnazad {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.registracijaPozicija .pozicijaForme input {
+    padding: 7px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.2s ease-in-out;
+    color: black;
+}
+
+.registracijaPozicija .pozicijaForme input:focus{
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.4), 
+                inset -4px -4px 6px rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.pozicijaForme button, .vratiUnazad {
+    padding: 7px;
+    width: 100%;
+    text-shadow: 0.2px 1px 2px black;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.3s ease; /* Glatka promena efekta */
+}
+
+    .pozicijaForme button:hover, .pozicijaForme .vratiUnazad:hover {
+        transform: translateY(-4px); /* Pomakne dugme prema gore */
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); /* Efekat kao da je izvađeno iz urezanosti */
+        color: white;
+    }
+
+
+
+.registracijaPozicija .pozicijaForme button{
+    margin-top:20px;
+}
+
+
+/* Error message */
+
+.text-danger {
+    text-shadow: 1px 0.1px 2px black;
+}
+
+
+/* Logovanje */
+
+.logovanjePozicija {
+    width: 100%;
+    margin-top:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logovanjePozicija .pozicijaForme {
+    width: 700px;
+    min-height: 300px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 8px black;
+    margin-bottom: 100px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.logovanjePozicija .unutrasnjostForme {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.logovanjePozicija .unutrasnjostForme .potvrda{
+    width: 550px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width:100%;
+}
+
+.logovanjePozicija .pozicijaForme label {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 1px;
+    color: white;
+    text-shadow: 0.1px 2px 5px black;
+}
+
+.logovanjePozicija .pozicijaForme input {
+    padding: 7px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset  0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.2s ease-in-out;
+    color: black;
+}
+
+
+.logovanjePozicija .pozicijaForme input:focus {
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 6px rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+
+.logovanjePozicija .pozicijaForme button {
+    margin-top: 20px;
+}
+
+.ptex {
+    margin: 0;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 0.1px 2px 5px black;
+}
+
+/* Kupovina */
+
+/* Leva strana */
+
+.narucivanjeContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    height:100vh;
+}
+
+.slikaLogo, .opisNarudzbe {
+    flex-basis: 50%;
+}
+
+.Kupovina {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+
+
+.slikaLogo{
+    background: url(../images/logo.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.naslovNaruci h1 {
+    text-align: center;
+    font-size: 3rem;
+    color:white;
+    text-shadow: 0.1px 2px 5px black;
+}
+
+.frmNar{
+    width:500px;
+}
+
+.formaNarucivanje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formaNarucivanje input {
+    padding: 7px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.2s ease-in-out;
+    color: black;
+}
+
+.formaNarucivanje input:focus{
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.4), 
+                inset -4px -4px 6px rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.formaNarucivanje label {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 1px;
+    align-self:flex-start;
+    color: white;
+    text-shadow: 0.1px 2px 5px black;
+}
+
+.naruciDugmici {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+    gap:20px;
+}
+
+.formaNarucivanje .odustani {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.formaNarucivanje button, .odustani {
+    padding: 7px;
+    width: 100%;
+    text-shadow: 0.2px 1px 2px black;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.3s ease; /* Glatka promena efekta */
+}
+
+.formaNarucivanje button {
+        margin-top: 20px;
+}
+
+.formaNarucivanje button:hover, .formaNarucivanje .odustani:hover {
+    transform: translateY(-4px); /* Pomakne dugme prema gore */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); /* Efekat kao da je izvađeno iz urezanosti */
+}
+
+.formaNarucivanje button:hover {
+    color: green;
+}
+
+.formaNarucivanje .odustani:hover {
+    color: lightcoral;
+}
+
+
+/* Uspesno narucivanje */
+.pozicijaUspeha {
+    position: relative;
+}
+
+.uspesnaNaruduba{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.uspesnaNaruduba {
+    background: rgb(233,72,121);
+    background: linear-gradient(51deg, rgba(233,72,121,0.3) 1%, rgba(232,101,196,0.3) 23%, rgba(244,91,155,0.3) 47%, rgba(232,101,196,0.3) 68%, rgba(233,72,121,0.3) 99%);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px;
+    width: auto;
+    height: 220px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%) scale(0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.uspesnaNaruduba {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.uspesnaNaruduba h3 {
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 5px black;
+}
+
+.usmeravanje {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 7px;
+    width: 100%;
+    text-shadow: 0.2px 1px 2px black;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.3s ease; /* Glatka promena efekta */
+}
+
+
+.usmeravanje:hover {
+    transform: translateY(-4px); /* Pomakne dugme prema gore */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); /* Efekat kao da je izvađeno iz urezanosti */
+    color: white;
+}
+
+/* Desna strana */
+
+.opisNarudzbe{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:auto;
+    width:100%;
+}
+
+
+
+.slikaNarudzbina {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
+.slikaNarudzbina img{
+    width:350px;
+    height:350px;
+    border-radius:20px;
+    box-shadow: 0px 0px 10px #f17ea2; 
+}
+
+
+.pozadina {
+    background: rgba(255, 255, 255, 0.2); /* Poluprovidna pozadina */
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: inset -2px -4px 2px rgba(241,144,174,0.3), inset 10px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.pozicijaCena{
+    display:flex;
+    justify-content:space-between;
+    gap:50px;
+    padding:10px;
+    border-bottom: 2px solid white;
+}
+
+.cenaKolicina {
+    font-size: 25px;
+    color: white;
+    text-shadow: 0.2px 1px 2px black;
+}
+
+.cenaKolicina p:nth-child(2){
+    margin:0px;
+}
+
+.ukupnaCena {
+    color: white;
+    align-self:flex-end;
+    text-shadow: 1px 1px 2px black;
+    margin:0px;
+}
+
+.ukupnaCena h3{
+    margin:0px;
+}
+
+.opisText {
+    font-size: 20px;
+    margin-top:20px;
+    color: white;
+    padding-left:10px;
+    text-shadow: 0.2px 1px 2px black;
+}

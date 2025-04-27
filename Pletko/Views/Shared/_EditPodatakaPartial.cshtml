@@ -1,0 +1,88 @@
+﻿@model Pletko.Models.AzurirajPodatke
+
+@{
+    Layout = "~/Views/Shared/_prazan.cshtml";
+}
+
+<div class="dodavanjeKorisnika">
+    <div class="naslov">
+        <h1>Promenite korisničke podatke</h1>
+        <p></p>
+    </div>
+    <div class="pozicijaDodavanja">
+        <div class="unutrasnjostFormeEditovanje">
+            <form asp-action="azurirajPodatke" asp-controller="Administrator" method="POST" id="editPodatakaForm">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="formaEdituj">
+                    <input type="hidden" name="KorisnikId" id="KorisnikId" value="@ViewBag.TrazeniKorisnik.KorisnikId" />
+                    <label asp-for="Ime" class="control-label"></label>
+                    <input asp-for="Ime" class="form-control" value="@ViewBag.TrazeniKorisnik.Ime" />
+                    <span asp-validation-for="Ime" class="text-danger"></span>
+
+                    <label asp-for="Prezime" class="control-label"></label>
+                    <input asp-for="Prezime" class="form-control" value="@ViewBag.TrazeniKorisnik.Prezime" />
+                    <span asp-validation-for="Prezime" class="text-danger"></span>
+
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" value="@ViewBag.TrazeniKorisnik.Email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+
+                    <label asp-for="BrojTelefona" class="control-label"></label>
+                    <input asp-for="BrojTelefona" class="form-control" value="@ViewBag.TrazeniKorisnik.BrojTelefona" />
+                    <span asp-validation-for="BrojTelefona" class="text-danger"></span>
+
+                    <label asp-for="Adresa" class="control-label"></label>
+                    <input asp-for="Adresa" class="form-control" value="@ViewBag.TrazeniKorisnik.Adresa" />
+                    <span asp-validation-for="Adresa" class="text-danger"></span>
+
+                    <label asp-for="OldPassword" class="control-label">Admin lozinka</label>
+                    <input asp-for="OldPassword" class="form-control" placeholder="Unesite Vašu staru šifru" />
+                    <span asp-validation-for="OldPassword" class="text-danger"></span>
+
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" placeholder="Unesite Vašu novu šifru" />
+
+
+                    <div class="naruciDugmici">
+                        <button type="submit">Ažurirajte podatke</button>
+                        <a href="@Url.Action("ObrisiKorisnika", "Administrator", new { KorisnikID = @ViewBag.TrazeniKorisnik.KorisnikId })" class="odustani">Obriši korisnika</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#editPodatakaForm").submit(function (e) {
+            e.preventDefault(); // Sprečava osvežavanje stranice
+
+            var formData = $(this).serialize(); // Prikuplja podatke iz forme
+
+            $.ajax({
+                url: "/Administrator/azurirajPodatke",
+                type: "POST",
+                data: formData,
+                success: function (data) {
+                    if (data.success) {
+                        alert(data.message);
+                        $.ajax({
+                        url: '/Administrator/EditPodatakaPartial',
+                        type: 'GET',
+                        data: { KorisnikID: data.korisnikId },
+                        success: function (partialView) {
+                        $('#partialEdit').html(partialView);
+                        },
+                    });
+                    } else {
+                        $("#partialEdit").html(data); // Ažurira parcijalni pogled sa greškama
+                    }
+                },
+                error: function (xhr) {
+                    console.error("Greška:", xhr.responseText);
+                }
+            });
+        });
+    });
+</script>

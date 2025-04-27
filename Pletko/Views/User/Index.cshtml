@@ -1,0 +1,161 @@
+﻿@model Pletko.Models.KorisnikNarucivanje;
+
+@{
+    ViewData["Title"] = "Dobrodošli";
+    Layout = "~/Views/Shared/PocetniNavBar.cshtml";
+}
+
+<div class="header finisher-header blue-header sticky-header" style="width: 100%; height: 400px;">
+    <h1 class="naslovP">
+        <span>
+            <img src="~/images/logoBezSlova.png" alt="Alternate Text" />
+        </span>
+        <span>P</span>
+        <span>L</span>
+        <span>E</span>
+        <span>T</span>
+        <span>K</span>
+        <span>O</span>
+    </h1>
+</div>
+<section>
+    <div class="potekst">
+        <div class="opisPoteksta">
+            <div class="ikonica"><img src="./svg/sigurnost.svg" /></div>
+            <div class="tekstPoteksta">
+                <div class="velikaSlova">Pouzdan i siguran</div>
+                <div class="malaSlova">Korisnička podrška 24/7</div>
+            </div>
+        </div>
+
+        <div class="opisPoteksta">
+            <div class="ikonica"><img src="./svg/procena.svg"/></div>
+            <div class="tekstPoteksta">
+                <div class="velikaSlova"> Najbolji odnos cene i kvaliteta</div>
+                <div class="malaSlova">Najkvalitetniji proizvodi na jednom mestu</div>
+            </div>
+        </div>
+
+        <div class="opisPoteksta">
+            <div class="ikonica"><img src="./svg/dostava.svg"/></div>
+            <div class="tekstPoteksta">
+                <div class="velikaSlova">Brza i laka dostava</div>
+                <div class="malaSlova">Vaš proizvod vam stiže u roku od 3 dana</div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="content">
+    <div class="leviDiv">
+        <div class="kate">
+            <div class="katNaslov">
+                <h3>Kategorije</h3>
+            </div>
+            <div class="kategorija">
+                <ul>
+                    <form action="" method="post">
+                        @foreach (var kategorija in ViewBag.Kategorije)
+                        {
+                            <a href="@Url.Action("Pretraga", "User", new { KategorijaNaziv = kategorija.Naziv })">
+                                <li class="vratiUnazad">
+                                    <img src="./svg/@(kategorija.Naziv.ToString() + ".svg")" />
+						        </li>
+                            </a>
+                        }
+                    </form>
+                </ul>
+
+            </div>
+        </div>
+        
+    </div>
+    <article class="container okvirContainer"> 
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container text-center">
+                    <div class="proizvodiSredina">
+                        @if (ViewBag.Proizvodi != null)
+                        {
+                            <div class="row  okrvirKartice ">
+                                @foreach (var item in ViewBag.Proizvodi)
+                                {
+
+                                    <div class="animacija">
+                                        <div class="col">
+                                            <div id="openPopup-@item.ProizvodId">
+                                                <div class="text-center slikaFormat klik" id="@item.ProizvodId">
+                                                    <div>
+                                                        <img src="~/images/proizvodImages/@(item.Naziv.ToString() + ".jpg")"
+                                                             class="rounded d-block w-200" alt="...">
+                                                    </div>
+                                                    <div class="opisProizvoda">
+                                                        <p class="nazivProizvoda">@item.Naziv</p>
+                                                        <p class="cenaProizvoda">@(item.Cena.ToString() + " RSD")</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                }
+                                
+                            </div>
+
+                        }
+                        else
+                        {
+                            <h2>Nema proizvoda na stanju</h2>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    @foreach (var item in ViewBag.Proizvodi)
+    {
+        <div class="trazi" id="element-@item.ProizvodId">
+            <div class="popup-content">
+                <span id="closePopup-@item.ProizvodId" class="close">&times;</span>
+                <h2>Narucite proizvod</h2>
+                <div class="proizvodNaruci">
+                    <div class="imageDiv">
+                        <img src="~/images/proizvodImages/@(item.Naziv.ToString() + ".jpg")" alt="...">
+                    </div>
+                    <div class="opis">
+                        <h3>@item.Naziv</h3>
+                        <p>@(item.Cena.ToString() + " RSD")</p>
+                        <div class="opisNaruci">
+                            <p> @item.Opis</p>
+                        </div>
+                        @if (ViewBag.Logovan)
+                        {
+                            <a href="@Url.Action("Narudzbina", "User", new { ProizvodID = item.ProizvodId })">Naručite proizvod</a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Login", "User")">Ulogujte se</a>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    }
+
+    
+</div>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center px-5  border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0">© 2025 Miloš Savić | milossavic199@gmial.com</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body" href="https://www.linkedin.com/in/milo%C5%A1-savi%C4%87-115a64336/"><i class="bi bi-linkedin"></i></a></li>
+        <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-facebook"></i></a></li>
+    </ul>
+</footer>

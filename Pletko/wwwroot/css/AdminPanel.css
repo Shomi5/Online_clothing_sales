@@ -1,0 +1,715 @@
+﻿body {
+    background: rgb(240,109,149);
+    background: linear-gradient(180deg, rgba(240,109,149,1) 16%, rgba(227,112,196,1) 84%, rgba(199,97,213,1) 100%);
+}
+
+.naslov {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+    text-shadow: 0.2px 3px 2px black;
+    z-index: 1000;
+}
+
+.text-danger {
+    text-shadow: 0px 1px 3px rgb(13, 12, 12);
+    font-weight:bold;
+    color:rgb(165, 5, 5)
+}
+
+.naslov p {
+    width: 600px;
+    border-bottom: 3px solid white;
+}
+
+.aminPanel, .tabelaNaslov {
+    flex-basis: 50%;
+}
+
+.naslovKorisnik {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 2px 2px black;
+    margin-top: 20px;
+}
+
+.narucivanjeContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+/* Skrolovanje strane */
+
+.pozicijaUspeh{
+    height:200vh;
+}
+
+
+.aminPanel.pozicijaFix {
+    position: fixed;
+    top: 90px;
+}
+
+/* Tabela Narudzbina */
+.NarudzbineTabela {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    margin-left: 10px;
+    text-shadow: 0px 2px 2px black;
+}
+
+.NarudzbineTabela th, .NarudzbineTabela td {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    color:white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.NarudzbineTabela th {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.NarudzbineTabela tbody {
+    display: block;
+    max-height: 180px; /* Ograničava visinu tela tabele */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.NarudzbineTabela tbody::-webkit-scrollbar {
+    width: 8px;
+}
+
+.NarudzbineTabela tbody::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.NarudzbineTabela tbody::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.NarudzbineTabela tbody::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.NarudzbineTabela thead, .NarudzbineTabela tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.NarudzbineTabela tbody tr {
+    border-bottom: 1px solid white;
+}
+
+.NarudzbineTabela th {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+
+
+
+/* Tabela korisnika */
+
+.KorisnikTabela {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    margin-left:10px;
+    text-shadow: 0px 2px 2px black;
+}
+
+.KorisnikTabela th, .KorisnikTabela td {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    color:white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.KorisnikTabela th {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.KorisnikTabela tbody {
+    display: block;
+    max-height: 180px; /* Ograničava visinu tela tabele */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.KorisnikTabela tbody::-webkit-scrollbar {
+    width: 8px;
+}
+
+.KorisnikTabela tbody::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.KorisnikTabela tbody::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.KorisnikTabela tbody::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.KorisnikTabela thead, .KorisnikTabela tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.KorisnikTabela tbody tr {
+    border-bottom: 1px solid white;
+}
+
+.KorisnikTabela th {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+
+/* Tabela proizvoda */
+
+
+.ProizvodTabela {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    margin-left:10px;
+    text-shadow: 0px 2px 2px black;
+}
+
+.ProizvodTabela th, .ProizvodTabela td {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap;
+    color:white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ProizvodTabela th {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+.ProizvodTabela tbody {
+    display: block;
+    max-height: 180px; /* Ograničava visinu tela tabele */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.ProizvodTabela tbody::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ProizvodTabela tbody::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.ProizvodTabela tbody::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.ProizvodTabela tbody::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.ProizvodTabela thead, .ProizvodTabela tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.ProizvodTabela tbody tr {
+    border-bottom: 1px solid white;
+}
+
+.ProizvodTabela th {
+    border-bottom: 2px solid white;
+    font-weight: bold;
+}
+
+
+/* Desna strana */
+
+.podaciEdit {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.aminPanel{
+    background: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center
+}
+
+/* Dodavanje korisnika */
+
+
+.dodavanjeKorisnika {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dodavanjeKorisnika p{
+    align-self:center;
+}
+
+.unutrasnjostFormeDodavanje {
+    width: 600px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.formaEdituj select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6), inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.formaEdituj select:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.formaEdituj option {
+    background-color: rgba(50, 50, 50, 0.9);
+    color: white;
+    max-width: 100px;
+    cursor: pointer;
+}
+
+@-moz-document url-prefix() {
+    .formaEdituj option {
+        background-color: #444 !important;
+    }
+
+    .formaEdituj option:hover {
+        cursor: pointer !important;
+    }
+}
+
+.unutrasnjostFormeDodavanje select {
+    width: 100%;
+    border-radius: 5px;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px black;
+    padding: 2px;
+    padding-left: 8px;
+    border: none;
+    background-color: transparent;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.6), inset -2px -2px 1px rgba(255, 255, 255, 0.1);
+}
+
+.unutrasnjostFormeDodavanje select:focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.unutrasnjostFormeDodavanje option {
+    background-color: rgba(50, 50, 50, 0.9); 
+    color: white;
+    max-width: 100px;
+    cursor:pointer;
+}
+
+@-moz-document url-prefix() {
+    .unutrasnjostFormeDodavanje option {
+        background-color: #444 !important;
+    }
+
+    .unutrasnjostFormeDodavanje option:hover {
+    cursor:pointer !important;
+    }
+}
+
+.dodavanjeKorisnika .pozicijaDodavanja {
+    width: 650px;
+    min-height: 500px;
+    display: grid;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 8px black;
+    margin-bottom: 100px;
+    padding: 20px;
+
+}
+
+.dodavanjeKorisnika .pozicijaDodavanja label {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 1px;
+    color: white;
+    text-shadow: 0.1px 2px 5px black;
+}
+
+.pozicijaDodavanja .vratiUnazad {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dodavanjeKorisnika .pozicijaDodavanja input {
+    padding: 7px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+.dodavanjeKorisnika .pozicijaDodavanja input::placeholder{
+    color:rgb(193, 188, 188);
+}
+
+.dodavanjeKorisnika .pozicijaDodavanja input:focus {
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 6px rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.dodavanjeKorisnika .pozicijaDodavanja .unutrasnjostFormeDodavanje button {
+    margin-top: 20px;
+}
+
+.dodajKorisnika, .vratiUnazad {
+    padding: 7px;
+    width: 100%;
+    text-shadow: 0.2px 1px 2px black;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.3s ease; /* Glatka promena efekta */
+}
+
+.dodajKorisnika:hover{
+    transform: translateY(-4px); /* Pomakne dugme prema gore */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); /* Efekat kao da je izvađeno iz urezanosti */
+    color: green;
+}
+
+.pozicijaDodavanja .vratiUnazad:hover {
+    transform: translateY(-4px); /* Pomakne dugme prema gore */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); /* Efekat kao da je izvađeno iz urezanosti */
+    color: lightcoral;
+}
+
+/* Dodavanje podataka */
+
+.listaNarudzbina, .listaKorisnika, .listaProizvoda {
+    padding:20px;
+}
+
+.dodavanjeKP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.dodavanjeKP button {
+    padding: 7px;
+    width: 100%;
+    text-shadow: 0.2px 1px 2px black;
+    border: none;
+    margin-top:20px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.3s ease; /* Glatka promena efekta */
+}
+
+.dodavanjeKP button:hover{
+
+        transform: translateY(4px);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); 
+    color:rgb(95, 204, 29);
+  
+}
+
+
+
+/* Azuriranje podataka i brisanje */
+
+
+.izmeni , .izbrisi {
+    display: flex;
+    text-decoration:none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 4px;
+    text-shadow: 0.2px 1px 2px black;
+    border-radius: 3px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.3s ease; /* Glatka promena efekta */
+}
+
+.izmeni:hover{
+
+        transform: translate3d(-50deg);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); 
+    color:rgb(34 106 235);
+  
+}
+
+.izbrisi:hover{
+         transform: translate3d(-50deg);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); 
+    color:rgb(206 6 6);
+}
+
+
+.unutrasnjostFormeEditovanje {
+    width: 600px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.unutrasnjostFormeEditovanje form{
+    width:100%;
+}
+
+
+.formaEdituj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width:600px;
+}
+
+.formaEdituj input {
+    padding: 7px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.2s ease-in-out;
+    color: white;
+}
+
+.formaEdituj input:focus {
+    box-shadow: inset 0px 1px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 6px rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.formaEdituj label {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 1px;
+    align-self: flex-start;
+    color: white;
+    text-shadow: 0.1px 2px 5px black;
+}
+
+.naruciDugmici {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:100%;
+    gap:20px;
+}
+
+.formaEdituj .odustani {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.formaEdituj button, .odustani {
+    padding: 7px;
+    width: 100%;
+    text-shadow: 0.2px 1px 2px black;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.3s ease; /* Glatka promena efekta */
+}
+
+.formaEdituj button {
+    margin-top: 20px;
+}
+
+.formaEdituj button:hover, .formaEdituj .odustani:hover {
+    transform: translateY(-4px); /* Pomakne dugme prema gore */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); /* Efekat kao da je izvađeno iz urezanosti */
+    
+}
+
+.formaEdituj button:hover{color: green;}
+.formaEdituj .odustani:hover {
+    color: lightcoral;
+}
+
+/* Slike izmene */
+
+.okvirslike{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    width:100%;
+}
+
+.slikaFormat {
+    width: 330px;
+    height: 330px;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 6px 2px black;
+}
+
+.slikaFormat img {
+    width:330px;
+    height:330px;
+    object-fit:cover;
+    margin-bottom: 7px;
+}
+
+
+/* Obavestenja */
+
+.uspesnaNaruduba{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.uspesnaNaruduba {
+    background: rgb(233,72,121);
+    background: linear-gradient(51deg, rgba(233,72,121,0.3) 1%, rgba(232,101,196,0.3) 23%, rgba(244,91,155,0.3) 47%, rgba(232,101,196,0.3) 68%, rgba(233,72,121,0.3) 99%);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 20px;
+    width: auto;
+    height: 220px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%, -50%) scale(0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.uspesnaNaruduba {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.uspesnaNaruduba h3 {
+    text-align: center;
+    color: white;
+    text-shadow: 3px 2px 5px black;
+}
+
+.usmeravanje {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 7px;
+    width: 100%;
+    text-shadow: 0.2px 1px 2px black;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.1); /* Blago prozirna pozadina */
+    box-shadow: inset 0px 1px 6px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.2); /* Urezani efekat */
+    color: white; /* Tekst u kontrastu */
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Safari podrška */
+    transition: all 0.3s ease; /* Glatka promena efekta */
+}
+
+
+.usmeravanje:hover {
+    transform: translateY(-4px); /* Pomakne dugme prema gore */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(255, 255, 255, 0.3), 0 2px 10px rgba(0, 0, 0, 0.2); /* Efekat kao da je izvađeno iz urezanosti */
+    color: white;
+}

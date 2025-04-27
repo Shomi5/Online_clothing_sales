@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="~/css/NavBar.css" />
+    <link rel="stylesheet" href="~/css/GlavnaStrana.css" />
+
+
+</head>
+<body>
+    <header id="pocetakNava">
+        <nav class="navbar mojibar skrolaj navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto logoPocetna" href="/"><img src="./images/logoBezSlova.png" alt=""></a>
+                <div class="offcanvas pozadinaOffcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="" alt=""></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link  mx-lg-2 kuca" href="/"><img src="~/svg/kuca.svg" /></a>
+                            </li>
+                            @if (ViewBag.Logovan){
+                                <li class="nav-item profilNav">
+                                    <a class="nav-link vidljivost   mx-lg-2" href="@Url.Action("userProfil", "User")">Profil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link vidljivost  mx-lg-2" href="/">Slika i mail</a>
+                                </li>
+                            }
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                @if (ViewBag.Logovan)
+                {
+
+                    @if (ViewBag.Rola == "Admin" || ViewBag.Rola == "Moderator")
+                    {
+                    <div class="btn-group">
+                            <a type="submit" class="kuca" data-bs-toggle="dropdown">
+                                <img src="~/svg/profilSvg.svg" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="@Url.Action("userProfil", "User")"><span>Vaš profil</span></a>
+                                @if (ViewBag.Rola == "Admin"){
+                                    <a class="dropdown-item" href="@Url.Action("AdminPanel", "Administrator")"><span>Admin panel</span></a>
+                                }
+                                else{
+                                    <a class="dropdown-item" href="@Url.Action("ModeratorPanel", "Moderator")"><span>Moderator panel</span></a>
+                                }
+                                
+                                <a class="dropdown-item profilDrop" href="@Url.Action("Logout", "User")"><span>Logout</span></a>
+                            </ul>
+                        </div>
+                    }
+
+                    else{
+                        <div class="btn-group">
+                            <a type="submit" class="kuca" data-bs-toggle="dropdown">
+                                <img src="~/svg/profilSvg.svg" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="@Url.Action("userProfil", "User")"><span>Vaš profil</span></a>
+                                <a class="dropdown-item profilDrop" href="@Url.Action("Logout", "User")"><span>Logout</span></a>
+                            </ul>
+                        </div>
+                    }
+                    
+                }
+                else
+                {
+
+                    <a class="login-buttin svgLogoin" href="@Url.Action("Login", "User")"><img src="~/svg/logout.svg" /><span>Ulogujte se</span ></a>
+                }
+                
+                
+
+                 <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
+                          aria-controls="offcanvasNavbar" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                 </button> 
+
+            </div>
+        </nav>
+        
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/finisher-header.es5.min.js"></script>
+    <script src="~/js/PozadinaNava.js"></script>
+    <script src="~/js/skrolovanjeDiva.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/PocetniNavSkripta.js" asp-append-version="true"></script>
+    <script src="~/js/popupNarucivanje.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

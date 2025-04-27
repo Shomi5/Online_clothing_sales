@@ -1,0 +1,141 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Pletko
+build_property.RootNamespace = Pletko
+build_property.ProjectDir = D:\Visual Studio projekti\Treca godina\IzradaProjekta\PletkoProjekat_PPP\Pletko\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Visual Studio projekti\Treca godina\IzradaProjekta\PletkoProjekat_PPP\Pletko
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Administrator/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRvclxBZG1pblBhbmVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Moderator/ModeratorPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kZXJhdG9yXE1vZGVyYXRvclBhbmVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluUGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/ModeratorPalenLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1vZGVyYXRvclBhbGVuTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/PocetniNavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBvY2V0bmlOYXZCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/PretragaNavBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByZXRyYWdhTmF2QmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/RagistracijaLogovanje.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJhZ2lzdHJhY2lqYUxvZ292YW5qZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_dodajProizvod.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kb2RhalByb2l6dm9kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_dodavanjeKorisnika.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9kb2RhdmFuamVLb3Jpc25pa2EuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_EditPodatakaPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FZGl0UG9kYXRha2FQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_EditProizvoda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FZGl0UHJvaXp2b2RhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_korisikPonuda.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9rb3Jpc2lrUG9udWRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_ponudaDodaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wb251ZGFEb2Rhai5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_PonudaEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Qb251ZGFFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_prazan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wcmF6YW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/User/Narudzbina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxOYXJ1ZHpiaW5hLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/User/Pretraga.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcmV0cmFnYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/User/userProfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclx1c2VyUHJvZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio projekti/Treca godina/IzradaProjekta/PletkoProjekat_PPP/Pletko/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-31r7owdgla

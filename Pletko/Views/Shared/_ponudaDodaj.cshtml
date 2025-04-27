@@ -1,0 +1,85 @@
+﻿@model Pletko.Models.SpecijalnaPonudaBO
+
+@{
+    Layout = "~/Views/Shared/_prazan.cshtml";
+}
+
+<div class="dodavanjeKorisnika">
+    <div class="naslov">
+        <h1>Unos specijalne pogodnosti</h1>
+        <p></p>
+    </div>
+    <div class="pozicijaDodavanja">
+        <form asp-action="DodajNovuPonudu" asp-controller="Administrator" method="post" id="dodajPonudu">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="unutrasnjostFormeDodavanje">
+                <div>
+                    <label asp-for="Naziv" class="control-label">Naziv ponude:</label>
+                    <input asp-for="Naziv" placeholder="Unesite naziv ponude." />
+                    <span asp-validation-for="Naziv" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Popust" class="control-label">Popust ponude:</label>
+                    <input asp-for="Popust" placeholder="Unesite popust od 5 do 80 %" />
+                    <span asp-validation-for="Popust" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="Opis" class="control-label">Opis ponude:</label>
+                    <input asp-for="Opis" placeholder="Unesite opis ponude" />
+                    <span asp-validation-for="Opis" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="KorisnikId" class="control-label">ID radnika:</label>
+                    <input asp-for="KorisnikId" placeholder="Unesite radnik ID" value="@ViewBag.Radnik" readonly />
+                    <span asp-validation-for="KorisnikId" class="text-danger"></span>
+                </div>
+                <div>
+                    <label asp-for="OldPassword" class="control-label">lozinka radnika:</label>
+                    <input asp-for="OldPassword" placeholder="Unesite lozinku radnika" />
+                    <span asp-validation-for="OldPassword" class="text-danger"></span>
+                </div>
+                <div>
+
+                </div>
+                <div>
+                    <button class="dodajKorisnika" type="submit">Dodaj ponudu</button>
+                </div>
+                <div>
+                    <a asp-action="ModeratorPanel" asp-controller="Moderator" class="vratiUnazad">Odustani</a>
+                </div>
+
+            </div>
+
+
+
+        </form>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#dodajPonudu").submit(function (e) {
+            e.preventDefault(); // Sprečava osvežavanje stranice
+
+            var formData = $(this).serialize(); // Prikuplja podatke iz forme
+
+            $.ajax({
+                url: "/Moderator/DodajNovuPonudu",
+                type: "POST",
+                data: formData,
+                success: function (data) {
+                    if (!data.success) {
+                        $("#partialEdit").html(data); // Ažurira parcijalni pogled sa greškama
+                    }
+                    else{
+                        location.reload();
+                    }
+                },
+                error: function (xhr) {
+                    console.error("Greška:", xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
+

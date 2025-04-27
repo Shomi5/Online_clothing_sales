@@ -1,0 +1,386 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\shared\\_editproizvoda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\shared\\_editproizvoda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\shared\\_korisikponuda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\shared\\_korisikponuda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\shared\\_dodajproizvod.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\shared\\_dodajproizvod.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\shared\\_ponudaedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\shared\\_ponudaedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\shared\\_ponudadodaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\shared\\_ponudadodaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\interface\\imoderatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\interface\\imoderatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\efrepository\\moderatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\efrepository\\moderatorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\controllers\\moderatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\controllers\\moderatorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\efrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\efrepository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\controllers\\administratorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\user\\pretraga.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\user\\pretraga.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\moderator\\moderatorpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\moderator\\moderatorpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\administrator\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\administrator\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\efrepository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\efrepository\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\user\\narudzbina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\user\\narudzbina.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\views\\shared\\_editpodatakapartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\views\\shared\\_editpodatakapartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\korisniknarucivanje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\korisniknarucivanje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\korisnikbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\korisnikbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\spkorisnika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\spkorisnika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\dodajproizvod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\dodajproizvod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|d:\\visual studio projekti\\treca godina\\izradaprojekta\\pletkoprojekat_ppp\\pletko\\models\\specijalnaponudabo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{963AECDD-CD7A-4EB3-95DB-5A3844BC7857}|Pletko\\Pletko.csproj|solutionrelative:pletko\\models\\specijalnaponudabo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_PonudaEdit.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_PonudaEdit.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\Shared\\_PonudaEdit.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_PonudaEdit.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\Shared\\_PonudaEdit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T20:25:08.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ponudaDodaj.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_ponudaDodaj.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\Shared\\_ponudaDodaj.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_ponudaDodaj.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\Shared\\_ponudaDodaj.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T20:24:40.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Pretraga.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\User\\Pretraga.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\User\\Pretraga.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\User\\Pretraga.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\User\\Pretraga.cshtml",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAG8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T18:58:54.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_dodajProizvod.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_dodajProizvod.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\Shared\\_dodajProizvod.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_dodajProizvod.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\Shared\\_dodajProizvod.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T18:53:43.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_EditProizvoda.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_EditProizvoda.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\Shared\\_EditProizvoda.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_EditProizvoda.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\Shared\\_EditProizvoda.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T18:37:45.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "KorisnikNarucivanje.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\KorisnikNarucivanje.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\KorisnikNarucivanje.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\KorisnikNarucivanje.cs",
+              "RelativeToolTip": "Pletko\\Models\\KorisnikNarucivanje.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T18:14:26.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "KorisnikBO.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\KorisnikBO.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\KorisnikBO.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\KorisnikBO.cs",
+              "RelativeToolTip": "Pletko\\Models\\KorisnikBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T17:54:38.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\EFRepository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\EFRepository\\UserRepository.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\EFRepository\\UserRepository.cs",
+              "RelativeToolTip": "Pletko\\Models\\EFRepository\\UserRepository.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAswJMAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T17:53:36.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Pletko\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Pletko\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAYwK4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T17:47:42.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Narudzbina.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\User\\Narudzbina.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\User\\Narudzbina.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\User\\Narudzbina.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\User\\Narudzbina.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T17:45:11.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_EditPodatakaPartial.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_EditPodatakaPartial.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\Shared\\_EditPodatakaPartial.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_EditPodatakaPartial.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\Shared\\_EditPodatakaPartial.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T17:11:12.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAOwSAAAAAAAAAAAawPkSAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-04-03T17:13:24.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SPKorisnika.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\SPKorisnika.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\SPKorisnika.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\SPKorisnika.cs",
+              "RelativeToolTip": "Pletko\\Models\\SPKorisnika.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T16:09:11.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_korisikPonuda.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_korisikPonuda.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\Shared\\_korisikPonuda.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Shared\\_korisikPonuda.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\Shared\\_korisikPonuda.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T16:07:05.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ModeratorPanel.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Moderator\\ModeratorPanel.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\Moderator\\ModeratorPanel.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Moderator\\ModeratorPanel.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\Moderator\\ModeratorPanel.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T13:47:18.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModeratorController.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Controllers\\ModeratorController.cs",
+              "RelativeDocumentMoniker": "Pletko\\Controllers\\ModeratorController.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Controllers\\ModeratorController.cs",
+              "RelativeToolTip": "Pletko\\Controllers\\ModeratorController.cs",
+              "ViewState": "AgIAAF0BAAAAAAAAAAASwG8BAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T12:59:06.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdministratorController.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Controllers\\AdministratorController.cs",
+              "RelativeDocumentMoniker": "Pletko\\Controllers\\AdministratorController.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Controllers\\AdministratorController.cs",
+              "RelativeToolTip": "Pletko\\Controllers\\AdministratorController.cs",
+              "ViewState": "AgIAAA0CAAAAAAAAAAAwwB4CAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:09:39.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminRepository.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\EFRepository\\AdminRepository.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\EFRepository\\AdminRepository.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\EFRepository\\AdminRepository.cs",
+              "RelativeToolTip": "Pletko\\Models\\EFRepository\\AdminRepository.cs",
+              "ViewState": "AgIAABsBAAAAAAAAAAASwDMBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:24:11.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "SpecijalnaPonudaBO.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\SpecijalnaPonudaBO.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\SpecijalnaPonudaBO.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\SpecijalnaPonudaBO.cs",
+              "RelativeToolTip": "Pletko\\Models\\SpecijalnaPonudaBO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T14:14:17.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "DodajProizvod.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\DodajProizvod.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\DodajProizvod.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\DodajProizvod.cs",
+              "RelativeToolTip": "Pletko\\Models\\DodajProizvod.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T15:50:28.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminPanel.cshtml",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Administrator\\AdminPanel.cshtml",
+              "RelativeDocumentMoniker": "Pletko\\Views\\Administrator\\AdminPanel.cshtml",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Views\\Administrator\\AdminPanel.cshtml",
+              "RelativeToolTip": "Pletko\\Views\\Administrator\\AdminPanel.cshtml",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAAN4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-03T13:51:12.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IModeratorRepository.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\Interface\\IModeratorRepository.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\Interface\\IModeratorRepository.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\Interface\\IModeratorRepository.cs",
+              "RelativeToolTip": "Pletko\\Models\\Interface\\IModeratorRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T13:54:41.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModeratorRepository.cs",
+              "DocumentMoniker": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\EFRepository\\ModeratorRepository.cs",
+              "RelativeDocumentMoniker": "Pletko\\Models\\EFRepository\\ModeratorRepository.cs",
+              "ToolTip": "D:\\Visual Studio projekti\\Treca godina\\IzradaProjekta\\PletkoProjekat_PPP\\Pletko\\Models\\EFRepository\\ModeratorRepository.cs",
+              "RelativeToolTip": "Pletko\\Models\\EFRepository\\ModeratorRepository.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAUwKwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T13:54:59.334Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

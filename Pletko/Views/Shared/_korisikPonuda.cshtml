@@ -1,0 +1,67 @@
+﻿@model Pletko.Models.SPKorisnika
+
+@{
+    Layout = "~/Views/Shared/_prazan.cshtml";
+}
+
+<div class="dodavanjeKorisnika">
+    <div class="naslov">
+        <h1>Dodela pogodnosti korisniku</h1>
+        <p></p>
+    </div>
+    <div class="pozicijaDodavanja">
+        <div class="unutrasnjostFormeEditovanje">
+            <form asp-action="DodeliPonuduKorisniku" asp-controller="Moderator" method="POST" id="dodelaPonude">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="formaEdituj">
+                    <label asp-for="PonudaId" class="control-label">Specijalne ponude:</label>
+                    <select asp-for="PonudaId"
+                            asp-items="@(new SelectList(ViewBag.Ponude,"PonudaId","Naziv"))">
+                        <option value="0">Izaberite kategoriju</option>
+                    </select>
+                    <span asp-validation-for="PonudaId" class="text-danger"></span>
+
+                    <input for="KorisnikId" name="KorisnikId" type="hidden" class="form-control" value="@ViewBag.Korisnik.KorisnikId" />
+                    <span asp-validation-for="KorisnikId" class="text-danger"></span>
+
+                    <label asp-for="OldPassword" class="control-label">Administratrska lozinka:</label>
+                    <input asp-for="OldPassword" class="form-control" placeholder="Unesite vašu lozinku." />
+                    <span asp-validation-for="OldPassword" class="text-danger"></span>
+
+                    <div class="naruciDugmici">
+                        <button type="submit">Dodeli te ponudu korisniku</button>
+                        <a href="@Url.Action("ModeratorPanel", "Moderator")" class="odustani">Odustani</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#dodelaPonude").submit(function (e) {
+            e.preventDefault(); // Sprečava osvežavanje stranice
+
+            var formData = $(this).serialize(); // Prikuplja podatke iz forme
+
+            $.ajax({
+                url: "/Moderator/DodeliPonuduKorisniku",
+                type: "POST",
+                data: formData,
+                success: function (data) {
+                    if (!data.success) {
+                        $("#partialEdit").html(data); // Ažurira parcijalni pogled sa greškama
+                    }
+                    else{
+                        location.reload();
+                    }
+                },
+                error: function (xhr) {
+                    console.error("Greška:", xhr.responseText);
+                }
+            });
+        });
+    });
+</script>

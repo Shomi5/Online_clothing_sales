@@ -1,0 +1,148 @@
+﻿@model Pletko.Models.AzurirajPodatke
+
+@{
+    ViewData["Title"] = "userProfil";
+    Layout = "~/Views/Shared/RagistracijaLogovanje.cshtml";
+}
+
+<div class="pozicijaUspeh">
+    <div class="narucivanjeContent">
+        <div class="tabelaNaslov">
+            <div class="naslovNaruci">
+                <h1>Vaše narudžbine</h1>
+            </div>
+            <div class="OkvirTabele">
+                <div class="tableHader">
+                    <div for="naziv">Naziv</div>
+                    <div for="kluc">Količina</div>
+                    <div for="cena">Cena</div>
+                    @* <div for="cena">Odustani te</div> *@
+
+                </div>
+                <div class="podaciTabele">
+                    @foreach (var item in ViewBag.PodaciNarudzbina)
+                    {
+                        <div class="jezgro">@item.Proizvod.Naziv</div>
+                        <div class="jezgro">@item.Kolicina</div>
+                        <div class="jezgro">@item.UkupnaCena<span>Rsd</span></div>
+                        <div class="jezgro"><a class="otkazi" href="@Url.Action("Odustani", "User", new { NarudzbinaID = item.NarudzbinaId })">Otkaži</a></div>
+                    }
+
+                </div>
+            </div>
+        </div>
+            <div class="editPodataka">
+                <div class="Kupovina">
+                    <div class="naslovProfilKorisnika">
+                        <h1>Ažuriranje podataka</h1>
+                    </div>
+                <form asp-action="userProfil" method="POST" class="frmNar">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="formaNarucivanje">
+                        <input type="hidden" name="KorisnikId" value="@ViewBag.KorisnickiPodatci.KorisnikId" />
+                            <label asp-for="Ime" class="control-label"></label>
+                            <input asp-for="Ime" class="form-control" value="@ViewBag.KorisnickiPodatci.Ime" />
+                            <span asp-validation-for="Ime" class="text-danger"></span>
+                    
+                            <label asp-for="Prezime" class="control-label"></label>
+                            <input asp-for="Prezime" class="form-control" value="@ViewBag.KorisnickiPodatci.Prezime" />
+                            <span asp-validation-for="Prezime" class="text-danger"></span>
+                    
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" value="@ViewBag.KorisnickiPodatci.Email"/>
+                            <span asp-validation-for="Email" class="text-danger"></span>
+
+                            <label asp-for="BrojTelefona" class="control-label"></label>
+                            <input asp-for="BrojTelefona" class="form-control" value="@ViewBag.KorisnickiPodatci.BrojTelefona"/>
+                            <span asp-validation-for="BrojTelefona" class="text-danger"></span>
+                    
+                            <label asp-for="Adresa" class="control-label"></label>
+                            <input asp-for="Adresa" class="form-control" value="@ViewBag.KorisnickiPodatci.Adresa"/>
+                            <span asp-validation-for="Adresa" class="text-danger"></span>
+
+                            <label asp-for="OldPassword" class="control-label"></label>
+                            <input asp-for="OldPassword" class="form-control" placeholder="Unesite Vašu staru šifru"/>
+                            <span asp-validation-for="OldPassword" class="text-danger"></span>
+                    
+                            <label asp-for="Password" class="control-label"></label>
+                            <input asp-for="Password" class="form-control" placeholder="Unesite Vašu novu šifru"/>
+                            
+                    
+                            <div class="naruciDugmici">
+                                <button type="submit">Ažurirajte podatke</button>
+                                <a asp-action="Index" asp-controller="User" class="odustani">Vrati se nazad</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+     </div>
+</div>
+
+@if (!string.IsNullOrEmpty(ViewBag.OtkazanaNarudzbina))
+{
+    if (ViewBag.OtkazanaNarudzbina == "Narudžbina je uspešno otkazana!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.OtkazanaNarudzbina </h3>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Nastavi sa naručivanjem</a>
+            <a class="usmeravanje" href="@Url.Action("UserProfil", "User")">Pogledaj te narudžbe na profilu</a>
+
+        </div>
+    }
+
+    if (ViewBag.OtkazanaNarudzbina == "Narudzbenica nije pronadjena!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.OtkazanaNarudzbina</h3>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Nastavi sa naručivanjem</a>
+            <a class="usmeravanje" href="@Url.Action("UserProfil", "User")">Probajte ponovo!</a>
+
+        </div>
+    }
+
+    if (ViewBag.OtkazanaNarudzbina == "Niste odabrali narudžbinu!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.OtkazanaNarudzbina</h3>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Nastavi sa naručivanjem</a>
+            <a class="usmeravanje" href="@Url.Action("UserProfil", "User")">Odaberite narudžbinu</a>
+
+        </div>
+    } 
+}
+
+
+@if (!string.IsNullOrEmpty(ViewBag.Azuriraj))
+{
+    if (ViewBag.Azuriraj == "Uspesno ste ažurirali podatke!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.Azuriraj </h3>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Nastavi sa naručivanjem</a>
+            <a class="usmeravanje" href="@Url.Action("UserProfil", "User")">Pogledaj te narudžbe na profilu</a>
+
+        </div>
+    }
+
+    if (ViewBag.Azuriraj == "Došlo je do greške usled ažuriranja podataka!")
+    {
+        <div class="uspesnaNaruduba">
+
+            <h3>@ViewBag.Azuriraj</h3>
+            <a class="usmeravanje" href="@Url.Action("index", "User")">Nastavi sa naručivanjem</a>
+            <a class="usmeravanje" href="@Url.Action("UserProfil", "User")">Probajte ponovo!</a>
+
+        </div>
+    }
+}
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

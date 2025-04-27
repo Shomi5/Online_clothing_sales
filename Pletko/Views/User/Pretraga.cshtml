@@ -1,0 +1,238 @@
+﻿@model Pletko.Models.KorisnikNarucivanje;
+
+@{
+    ViewData["Title"] = "Pletko";
+    Layout = "~/Views/Shared/PretragaNavBar.cshtml";
+
+    var trazenaKategorija = ViewBag.KategorijaArtikala as List<ProizvodBO>;
+
+
+}
+
+
+<main>
+    @if(trazenaKategorija != null && trazenaKategorija.Any(x=> x.Kategorija.Naziv == "Kape")){
+
+        <section class="text-center naslovOpisa sticky-header" style="background-image: url(/images/banner_Kape.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="row centarIsptisa py-lg-5" >
+                <div class="OpisKategorije">
+                    <h1 class="NaslovBanera">
+                        <span>K</span>
+                        <span>A</span>
+                        <span>P</span>
+                        <span>E</span>
+                    </h1>
+                     <p class="BanerPotekst" id="paragraf">
+                        Udobne, tople i ručno pletene – naše kape su savršen dodatak za hladne dane! Bilo da tražite klasičan dizajn, moderni kroj ili kapu sa pomponom, ovde ćete pronaći idealan model koji će upotpuniti vaš stil. Od prirodnih i mekanih materijala, svaka kapa je pažljivo izrađena da vam pruži maksimalnu udobnost i toplinu. Izaberite svoju omiljenu boju i istaknite se u svakoj prilici!
+                    </p>                
+                </div>
+            </div>
+        </section>
+    }
+
+    @if (trazenaKategorija != null && trazenaKategorija.Any(x => x.Kategorija.Naziv == "Salovi"))
+    {
+        <section class="text-center naslovOpisa sticky-header" style="background-image: url(/images/banner_Salovi.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="row py-lg-5">
+                <div class="OpisKategorije">
+                    <h1 class="NaslovBanera">
+                        <span>Š</span>
+                        <span>A</span>
+                        <span>L</span>
+                        <span>O</span>
+                        <span>V</span>
+                        <span>I</span>
+                    </h1>
+                    <p class="BanerPotekst" id="paragraf">
+                        Zagrejte se i unesite dašak elegancije u svoj stil uz naše pletene šalove! Savršeni su za hladne dane, a istovremeno su nežni prema vašoj koži. Bilo da volite klasične modele, široke šalove ili jednostavne marame, ovde ćete pronaći idealan dodatak za svaku priliku.
+                    </p>
+                </div>
+            </div>
+        </section>
+    }
+
+    @if (trazenaKategorija != null && trazenaKategorija.Any(x => x.Kategorija.Naziv == "Džemperi"))
+    {
+        <section class="text-center naslovOpisa sticky-header" style="background-image: url(/images/banner_Džemper.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="row py-lg-5">
+                <div class="OpisKategorije">
+                    <h1 class="NaslovBanera">
+                        <span>DŽ</span>
+                        <span>E</span>
+                        <span>M</span>
+                        <span>P</span>
+                        <span>E</span>
+                        <span>R</span>
+                        <span>I</span>
+                    </h1>
+                    <p class="BanerPotekst" id="paragraf">
+                        Uživajte u toplini i udobnosti naših ručno pletenih džempera! Svaki model je izrađen s posebnom pažnjom, od kvalitetnih i prirodnih materijala koji će vas grejati tokom hladnih dana. Bilo da tražite klasičan kroj, modernu siluetu ili oversize model, ovde ćete pronaći savršen džemper koji se uklapa u vaš stil.
+                    </p>
+                </div>
+            </div>
+        </section>
+    }
+
+    @if (trazenaKategorija != null && trazenaKategorija.Any(x => x.Kategorija.Naziv == "Rukavice"))
+    {
+        <section class="text-center naslovOpisa sticky-header" style="background-image: url(/images/banner_Rukavice.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="row py-lg-5">
+                <div class="OpisKategorije">
+                    <h1 class="NaslovBanera">
+                        <span>R</span>
+                        <span>U</span>
+                        <span>K</span>
+                        <span>A</span>
+                        <span>V</span>
+                        <span>I</span>
+                        <span>C</span>
+                        <span>E</span>
+                    </h1>
+                    <p class="BanerPotekst" id="paragraf">
+                        Zaštitite svoje ruke od hladnoće uz naše ručno pletene rukavice! Dostupne u različitim stilovima – klasične, bez prstiju ili sa preklopom – idealne su za svaki dan. Napravljene od toplih i kvalitetnih materijala, pružaju osećaj udobnosti i stila u zimskim danima.
+                    </p>
+                </div>
+            </div>
+        </section>
+    }
+
+    @if (trazenaKategorija != null && trazenaKategorija.Any(x => x.Kategorija.Naziv == "Čarape"))
+    {
+        <section class="text-center naslovOpisa sticky-header" style="background-image: url(/images/banner_Čarape.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <div class="row py-lg-5">
+                <div class="OpisKategorije">
+                    <h1 class="NaslovBanera">
+                        <span>Č</span>
+                        <span>A</span>
+                        <span>R</span>
+                        <span>A</span>
+                        <span>P</span>
+                        <span>E</span>
+                    </h1>
+                    <p class="BanerPotekst" id="paragraf">
+                        Stopala zaslužuju najbolje – naše pletene čarape donose udobnost, toplinu i prepoznatljiv ručni rad. Savršene za opuštanje kod kuće ili kao dodatni sloj zaštite u hladnim danima, izrađene su od mekanih materijala koji pružaju osećaj mekoće na svakom koraku. Odaberite svoj omiljeni par i neka vam bude toplo i udobno!
+                    </p>
+                </div>
+            </div>
+        </section>
+    }
+
+
+    
+    
+
+    <div class="content">
+        <div class="leviDiv">
+            <div class="kate">
+                <div class="katNaslov">
+                    <h3>Kategorije</h3>
+                </div>
+                <div class="kategorija">
+                    <ul>
+                        @foreach (var kategorija in ViewBag.Kategorije)
+                        {
+                            <a href="@Url.Action("Pretraga", "User", new { KategorijaNaziv = kategorija.Naziv })">
+                                <li class="vratiUnazad">
+                                <img src="~/svg/@(kategorija.Naziv.ToString() + ".svg")" />
+                                </li>
+                            </a>
+                        }
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <article class="container okvirContainer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container text-center">
+                        <div class="proizvodiSredina">
+                            @if (ViewBag.KategorijaArtikala != null)
+                            {
+
+                                <div class="row  okrvirKartice ">
+                                    @foreach (var item in ViewBag.KategorijaArtikala)
+                                    {
+
+                                        <div class="animacija">
+                                            <div class="col">
+                                                <div id="openPopup-@item.ProizvodId">
+                                                    <div class="text-center slikaFormat klik" id="@item.ProizvodId">
+                                                        <img src="~/images/proizvodImages/@(item.Naziv.ToString() + ".jpg")"
+                                                             class="rounded d-block w-200" alt="...">
+                                                        <div class="opisProizvoda">
+                                                            <p class="nazivProizvoda">@item.Naziv</p>
+                                                            <p class="cenaProizvoda">@(item.Cena.ToString() + " RSD")</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                
+                                        
+                                            </div>
+                                        </div>
+                                    }
+
+                                </div>
+
+                            }
+                            else
+                            {
+                                <h2>Nema proizvoda na stanju</h2>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        @foreach (var item in ViewBag.KategorijaArtikala){
+                <div class="trazi" id="element-@item.ProizvodId">
+                    <div class="popup-content">
+                        <span id="closePopup-@item.ProizvodId" class="close">&times;</span>
+                        <h2>Narucite proizvod</h2>
+                        <div class="proizvodNaruci">
+                            <div class="imageDiv">
+                                <img src="~/images/proizvodImages/@(item.Naziv.ToString() + ".jpg")" alt="...">
+                            </div>
+                            <div class="opis">
+                                <h3>@item.Naziv</h3>
+                                <p>@(item.Cena.ToString() + " RSD")</p>
+                                <div class="opisNaruci">
+                                <p> @item.Opis</p>
+                                </div>
+                            @if(ViewBag.Logovan){
+                                <a href="@Url.Action("Narudzbina", "User", new { ProizvodID = item.ProizvodId })">Naručite proizvod</a>
+                            }
+                            else{
+                                <a href="@Url.Action("Login", "User")">Ulogujte se</a>
+                            }
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+        }
+
+
+    </div>
+
+</main>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center px-5  border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0">© 2025 Miloš Savić | milossavic199@gmial.com</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-twitter"></i></a></li>
+        <li class="ms-3"><a class="text-body" href="https://www.linkedin.com/in/milo%C5%A1-savi%C4%87-115a64336/"><i class="bi bi-linkedin"></i></a></li>
+        <li class="ms-3"><a class="text-body" href="#"><i class="bi bi-facebook"></i></a></li>
+    </ul>
+</footer>
