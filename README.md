@@ -6,6 +6,9 @@ Ovaj projekat je web-site za online prodaju vunene odece. Omogućava korisnicima
 1. Otvoriti folder BazaPletko
 2. Otvoriti Microsoft SQL Server Management Studio
 3. Prevući mišem skriptu iz foldera i pokrenuti je
+4. Otvoriti folder Models
+5. Otvoriti PletkoContext.cs
+6. Promeniti konekcioni string: "Server='Naziv servera';Database=Pletko;Trusted_Connection=True;TrustServerCertificate=True;"
 
 ##Testiranje sajte:
 1. UserAcc:
